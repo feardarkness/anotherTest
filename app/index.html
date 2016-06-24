@@ -130,7 +130,7 @@
               <div id="restricciones3" class="col s12 m12 l12">
                 <ul>
                   <li><span class="det">Base legal:</span> {{restriccionesUso.baseLegal}}</li>
-                  <li><span class="det">Prerequisitos:</span> {{restriccionesUso.prerequisitos}}</li>
+                  <li><span class="det">Prerequisitos:</span> {{restriccionesUso.prerrequisitos}}</li>
                   <li><span class="det">Tarifa:</span> {{restriccionesUso.tarifa}}</li>
                   <li><span class="det">Restricciones Adicionales:</span> {{restriccionesUso.restriccionesAdicionales}}</li>
                 </ul>  
@@ -144,16 +144,22 @@
               </div>
               <div id="informacion3" class="col s12 m12 l12">
                 <ul>
-                  <li>INF: Valor1 algunos datos adicionales</li>
-                  <li>Dato2: Valor2 aún mas datos</li>
-                  <li>Dato3: Valor3 y si se necesita más información deberia estar aqui</li>            
+                  <li><span class="det">URL:</span> {{informacionTecnica.url}}</li>
+                  <li><span class="det">Tipo:</span> {{informacionTecnica.tipo}}</li>
+                  <li><span class="det">Entorno:</span> {{informacionTecnica.entorno}}</li>
+                  <li><span class="det">Datos de Entrada:</span> {{informacionTecnica.datosEntrada}}</li>
+                  <li><span class="det">Datos de Salida:</span> {{informacionTecnica.datosSalida}}</li>
+                  <li><span class="det">Cobertura Temporal:</span> {{informacionTecnica.coberturaTemporal}}</li>
+                  <li><span class="det">Tipo de Conexión:</span> {{informacionTecnica.tipoConexion}}</li>
+                  <li><span class="det">Software Relacionado:</span> {{informacionTecnica.softwareRelacionado}}</li>
                 </ul>  
               </div>
               <div id="seguridad3" class="col s12 m12 l12">
                 <ul>
-                  <li>SEG: Valor1 algunos datos adicionales</li>
-                  <li>Dato2: Valor2 aún mas datos</li>
-                  <li>Dato3: Valor3 y si se necesita más información deberia estar aqui</li>            
+                  <li><span class="det">Politicas de Seguridad:</span> {{seguridad.politicasSeguridad}}</li>
+                  <li><span class="det">Tipo de Autenticación:</span> {{seguridad.tipoAutenticacion}}</li>
+                  <li><span class="det">Firma Dígital:</span> {{seguridad.firma}}</li>
+                  <li><span class="det">Https:</span> {{seguridad.https}}</li>
                 </ul>  
               </div>
               &nbsp;
@@ -169,10 +175,12 @@
     <script src="/bower_components/Materialize/bin/materialize.js"></script>
     <script src="/bower_components/underscore/underscore.js"></script>
     <script src="/bower_components/mustache.js/mustache.js"></script>
+    <script src="/bower_components/linkifyjs/linkify.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
     <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/linkifyjs/linkify-jquery.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>

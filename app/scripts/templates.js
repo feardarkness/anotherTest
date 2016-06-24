@@ -41,14 +41,14 @@ var datos = {
     }
   ],
   "informacionTecnica":{
-"url":"http://www.segip.gob.bo/ServicioExternoInstitucion.svc?wsdl",
+    "url":"http://www.segip.gob.bo/ServicioExternoInstitucion.svc?wsdl",
     "tipo":"SOAP",
     "entorno":"PRODUCCION",
     "datosEntrada":"CI, Fecha_nacimiento",
     "datosSalida":"Nombre, Apellido, Apellido esposo, Carnet, Complemento",
     "coberturaTemporal":"24/7",
     "tipoConexion":"Fibra Optica",
-"softwareRelacionado":"http://gitlab.softwarelibre.gob.bo/segip/consultapersonas,http://gitlab.softwarelibre.gob.bo/servicios/segip/personas,http://gitlab.softwarelibre.gob.bo/servicios/busa/validacionPersonas"
+    "softwareRelacionado":"http://gitlab.softwarelibre.gob.bo/segip/consultapersonas,http://gitlab.softwarelibre.gob.bo/servicios/segip/personas,http://gitlab.softwarelibre.gob.bo/servicios/busa/validacionPersonas"
   },
   "seguridad":{
     "politicasSeguridad":"El ingreso se restringe por código de institución, usuario y contraseña. Se requiere una conexión de fibra óptica dedicada asegurada con una VPN.",
@@ -56,12 +56,13 @@ var datos = {
     "firma":"NO",
     "https":"NO"
   }
-}
-;
+};
 
 (function loadUser() {
   var template = $('#template').html();
   Mustache.parse(template);   // optional, speeds up future uses
   var rendered = Mustache.render(template, datos);
   $('.cuerpo').append(rendered);
+  
 })();
+$('.cuerpo').linkify();
