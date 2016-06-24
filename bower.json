@@ -1,0 +1,20 @@
+{
+  "name": "interoperabilidad-frontend",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "modernizr": "~2.8.1",
+    "Materialize": "materialize#^0.97.6",
+    "underscore": "^1.8.3",
+    "mustache.js": "mustache#^2.2.1"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
+  }
+}
