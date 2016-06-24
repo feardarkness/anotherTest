@@ -119,15 +119,15 @@
                 <li><span class="det">Servicios Relacionados:</span> {{datosGenerales.serviciosRelacionados}}</li>
                 <li><span class="det">Palabras clave:</span> {{datosGenerales.palabrasClave}}</li>
               </ul>            
-              <div>
+              <div>                
                 <ul class="tabs">
-                  <li class="tab col s3 m3 l3"><a class="active" href="#restricciones3">Restricciones de Uso</a></li>                  
-                  <li class="tab col s3 m3 l3"><a href="#informacion3">Información Técnica</a></li>
-                  <li class="tab col s3 m3 l3"><a href="#seguridad3">Seguridad</a></li>
-                  <li class="tab col s3 m3 l3"><a href="#contactos3">Contactos</a></li>
+                  <li class="tab col s3 m3 l3"><a class="active" href="#res{{datosGenerales.identificador}}">Restricciones de Uso</a></li>                  
+                  <li class="tab col s3 m3 l3"><a href="#inf{{datosGenerales.identificador}}">Información Técnica</a></li>
+                  <li class="tab col s3 m3 l3"><a href="#seg{{datosGenerales.identificador}}">Seguridad</a></li>
+                  <li class="tab col s3 m3 l3"><a href="#cont{{datosGenerales.identificador}}">Contactos</a></li>
                 </ul>
               </div>                
-              <div id="restricciones3" class="col s12 m12 l12">
+              <div id="res{{datosGenerales.identificador}}" class="col s12 m12 l12">
                 <ul>
                   <li><span class="det">Base legal:</span> {{restriccionesUso.baseLegal}}</li>
                   <li><span class="det">Prerequisitos:</span> {{restriccionesUso.prerrequisitos}}</li>
@@ -135,14 +135,14 @@
                   <li><span class="det">Restricciones Adicionales:</span> {{restriccionesUso.restriccionesAdicionales}}</li>
                 </ul>  
               </div>
-              <div id="contactos3" class="col s12 m12 l12">
+              <div id="cont{{datosGenerales.identificador}}" class="col s12 m12 l12">
                 <ul>
                   <li>CON: Valor1 algunos datos adicionales</li>
                   <li>Dato2: Valor2 aún mas datos</li>
                   <li>Dato3: Valor3 y si se necesita más información deberia estar aqui</li>            
                 </ul>  
               </div>
-              <div id="informacion3" class="col s12 m12 l12">
+              <div id="inf{{datosGenerales.identificador}}" class="col s12 m12 l12">
                 <ul>
                   <li><span class="det">URL:</span> {{informacionTecnica.url}}</li>
                   <li><span class="det">Tipo:</span> {{informacionTecnica.tipo}}</li>
@@ -154,7 +154,7 @@
                   <li><span class="det">Software Relacionado:</span> {{informacionTecnica.softwareRelacionado}}</li>
                 </ul>  
               </div>
-              <div id="seguridad3" class="col s12 m12 l12">
+              <div id="seg{{datosGenerales.identificador}}" class="col s12 m12 l12">
                 <ul>
                   <li><span class="det">Politicas de Seguridad:</span> {{seguridad.politicasSeguridad}}</li>
                   <li><span class="det">Tipo de Autenticación:</span> {{seguridad.tipoAutenticacion}}</li>
