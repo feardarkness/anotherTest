@@ -289,15 +289,17 @@ var datos = [{
     "https":"NO"
   }
 }];
-
-(function loadUser() {
-  var template = $('#template').html();
-  Mustache.parse(template);   // optional, speeds up future uses  
-  $.each(datos, function(index, el) {
-    var rendered = Mustache.render(template, el);
-    $('.cuerpo').append(rendered);    
-  });
-  
-  
-})();
-$('.cuerpo').linkify();
+/*
+$(document).ready(function($) {  
+  (function loadUser() {
+    var template = $('#template').html();
+    Mustache.parse(template);   // optional, speeds up future uses  
+    $.each(datos, function(index, el) {
+      var rendered = Mustache.render(template, el);
+      $('.cuerpo').append(rendered);    
+    });  
+    
+  })();
+*/
+  $('.cuerpo').linkify();  
+});

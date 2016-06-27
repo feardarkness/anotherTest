@@ -7,7 +7,8 @@
     "Materialize": "materialize#^0.97.6",
     "underscore": "^1.8.3",
     "mustache.js": "mustache#^2.2.1",
-    "linkifyjs": "^2.0.3"
+    "linkifyjs": "^2.0.3",
+    "aviator": "^0.5.0"
   },
   "overrides": {
     "bootstrap-sass": {
